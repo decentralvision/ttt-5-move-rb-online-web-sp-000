@@ -13,5 +13,6 @@ def input_to_index(input)
   (0..8).include?(integer) ? integer : -1
 end
 
-def move()
+def move(board, position, char)
+  board[position] = char
 end
