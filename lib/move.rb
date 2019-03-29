@@ -9,7 +9,8 @@ end
 # code your input_to_index and move method here!
 
 def input_to_index(input)
-  input.to_i - 1
+  integer = input.to_i - 1
+  [0..8].include(integer) ? integer : -1
 end
 
 def move()
